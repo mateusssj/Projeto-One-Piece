@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: piece;
+    src: url(fontes/KOMTIT__.ttf) format(truetype);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #BF1F2C;
+    --cor2: #7F151D;
+    --cor3: #FF293B;
+    --cor4: #400A0F;
+    --cor5: #E52535;
+
+    --fonte-padrao: Verdana, Tahoma, sans-serif;
+    --fonte-title: 'piece', arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+/* cabeça */
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    text-align: left;
+    background-color: var(--cor2);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-family: var(--fonte-title);
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor5);
+}
+
+/* links */
+strong > a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+/* links */
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 3px 7px 1px black
+}
+
+main > h1 {
+    text-align: left;
+    color: var(--cor4);
+    font-family: var(--fonte-title);
+    margin: 0px 20px;
+}
+
+main > h2 {
+    text-align: left;
+    color: var(--cor4);
+    font-family: var(--fonte-title);
+    margin: 0px 20px; 
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 1.8em;
+    font-family: var(--fonte-padrao);
+    margin: 0px 20px;
+}
+
+/* video */
+
+div#video {
+    background-color: var(--cor1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 45%;
+}
+
+div#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* tabela */
+
+div#tabela {
+    margin: 1em;
+    background-color: var(--cor2);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+div#tabela > h1 {
+    text-align: left;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    color: white;
+    font-family: var(--fonte-title);
+    text-indent: 5px;
+}
+
+div#tabela > p {
+    line-height: 1.8em;
+    text-indent: 10px;
+    text-align: left;
+    font-family: var(--fonte-padrao);
+    margin: 5px;
+}
+
+div#tabela > ul {
+    text-align: left;
+    list-style-position: inside;
+    columns: 2;
+    margin: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+/* rodapé */
+
+footer {
+    text-align: center;
+    background-color: var(--cor2);
+    margin-top: 1em;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    color: white;
+}
